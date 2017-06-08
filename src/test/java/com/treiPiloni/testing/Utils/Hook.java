@@ -36,6 +36,7 @@ public class Hook {
 
         System.setProperty("webdriver.chrome.driver", "src/resources/chromedriver");
         baseUtil.driver = new ChromeDriver();
+        baseUtil.driver.manage().window().fullscreen();
     }
 
     @After
