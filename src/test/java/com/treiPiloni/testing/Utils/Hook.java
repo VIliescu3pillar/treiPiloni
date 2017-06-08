@@ -32,7 +32,7 @@ public class Hook {
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
-
+        //test
 
 //        System.setProperty("webdriver.chrome.driver", "/Users/vlad.iliescu/Desktop/selenium requirements/chromedriver");
 //        baseUtil.driver = new ChromeDriver();
