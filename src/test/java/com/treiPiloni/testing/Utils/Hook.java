@@ -26,16 +26,16 @@ public class Hook {
     public void preTestsConfiguration() {
         //Chrome driver
 
-        DesiredCapabilities capability = DesiredCapabilities.chrome();
-        try {
-            baseUtil.driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capability);
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        }
+//        DesiredCapabilities capability = DesiredCapabilities.chrome();
+//        try {
+//            baseUtil.driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capability);
+//        } catch (MalformedURLException e) {
+//            e.printStackTrace();
+//        }
         //test:4444
 
-//        System.setProperty("webdriver.chrome.driver", "/Users/vlad.iliescu/Desktop/selenium requirements/chromedriver");
-//        baseUtil.driver = new ChromeDriver();
+        System.setProperty("webdriver.chrome.driver", "/Users/vlad.iliescu/Desktop/selenium requirements/chromedriver");
+        baseUtil.driver = new ChromeDriver();
     }
 
     @After
