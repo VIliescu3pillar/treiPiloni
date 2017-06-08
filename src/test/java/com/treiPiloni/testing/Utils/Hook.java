@@ -34,7 +34,7 @@ public class Hook {
 //        }
         //test:4444
 
-        System.setProperty("webdriver.chrome.driver", "/Users/vlad.iliescu/Desktop/selenium requirements/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/Users/vlad.iliescu/Documents/treiPiloni/src/resources/chromedriver");
         baseUtil.driver = new ChromeDriver();
     }
 
