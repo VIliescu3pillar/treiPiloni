@@ -29,7 +29,6 @@ public class Hook {
         //Chrome driver
         System.setProperty("webdriver.chrome.driver", "src/resources/chromedriver");
         baseUtil.driver = new ChromeDriver();
-        baseUtil.driver.manage().window().maximize();
     }
 
     @After
