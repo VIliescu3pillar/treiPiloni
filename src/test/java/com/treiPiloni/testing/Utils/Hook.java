@@ -34,7 +34,7 @@ public class Hook {
 //        }
         //test:4444
 
-        System.setProperty("webdriver.chrome.driver", "chromedriver");
+        System.setProperty("webdriver.chrome.driver", "src/resources/chromedriver");
         baseUtil.driver = new ChromeDriver();
     }
 
