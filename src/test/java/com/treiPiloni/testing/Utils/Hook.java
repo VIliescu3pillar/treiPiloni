@@ -28,7 +28,7 @@ public class Hook {
 
         DesiredCapabilities capability = DesiredCapabilities.chrome();
         try {
-            baseUtil.driver = new RemoteWebDriver(new URL("http://localhost:8080:4444/wd/hub"), capability);
+            baseUtil.driver = new RemoteWebDriver(new URL("http://'localhost':4444/wd/hub"), capability);
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
