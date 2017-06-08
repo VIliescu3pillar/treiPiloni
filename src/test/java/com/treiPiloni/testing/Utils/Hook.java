@@ -3,8 +3,10 @@ package com.treiPiloni.testing.Utils;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import org.junit.BeforeClass;
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -28,6 +30,9 @@ public class Hook {
         System.setProperty("webdriver.chrome.driver", "src/resources/chromedriver");
         baseUtil.driver = new ChromeDriver();
         baseUtil.driver.manage().window().maximize();
+
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setCapability("networkConnectionEnabled", true);
     }
 
     @After
