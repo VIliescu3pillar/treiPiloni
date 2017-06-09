@@ -27,14 +27,14 @@ public class Hook {
     @Before
     public void preTestsConfiguration() {
         //Chrome driver
-//        System.setProperty("webdriver.chrome.driver", "src/resources/chromedriver");
-//        baseUtil.driver = new ChromeDriver();
-        DesiredCapabilities capability = DesiredCapabilities.chrome();
-        try {
-            baseUtil.driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capability);
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        }
+        System.setProperty("webdriver.chrome.driver", "src/resources/chromedriver");
+        baseUtil.driver = new ChromeDriver();
+//        DesiredCapabilities capability = DesiredCapabilities.chrome();
+//        try {
+//            baseUtil.driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capability);
+//        } catch (MalformedURLException e) {
+//            e.printStackTrace();
+//        }
     }
 
     @After
