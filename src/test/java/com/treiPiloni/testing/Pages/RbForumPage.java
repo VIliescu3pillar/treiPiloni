@@ -20,7 +20,7 @@ public class RbForumPage {
 
     public RbForumPage(WebDriver driver) {
         this.driver = driver;
-        wait = new WebDriverWait(driver, 30);
+        wait = new WebDriverWait(driver, 60);
         PageFactory.initElements(driver, this);
     }
 
